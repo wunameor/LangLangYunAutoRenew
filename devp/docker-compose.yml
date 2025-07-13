@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  monthly-task:
+    build: .
+    container_name: langlangyun-auto-renew
+    environment:
+      - TZ=Asia/Shanghai       # 设置时区
+    #restart: unless-stopped   # 容器异常退出时自动重启
