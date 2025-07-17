@@ -1,6 +1,6 @@
 # 每月 13 日 00:00 执行 main.py
 PATH=/usr/local/bin:/usr/bin:/bin
 HOME=/app
-#0 0 13 * * python /app/main.py >> /var/log/cron.log 2>&1 
-*/1 * * * * python /app/main.py >> /var/log/cron.log 2>&1 
+0 0 13 * * python /app/main.py >> /var/log/cron.log 2>&1 
+#*/1 * * * * python /app/main.py >> /var/log/cron.log 2>&1 
 # 空行（确保以换行符结尾）
